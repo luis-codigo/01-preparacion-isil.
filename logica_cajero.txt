@@ -1,0 +1,47 @@
+#paso 1
+muestra la pantalla de cajero con una bienvenida y  sus opciones
+#paso 2  
+primera opción = insertar tarjeta 
+ingresar clave = 12452
+#paso 3
+si ingresaste bien te abre otra ventana de opciones
+si ingresaste mal te muestra una mensaje de error y de volver a intentarlo
+si te equivocas tres veces bloquea tu tarjeta 
+#paso 5
+si ingresas correctamente tienes cuatro opciones como:
+ver saldo actual (opción 1)
+depositar (opción 2)
+retirar (opción 3)
+ver movimientos (opción 4)
+salir (opción 5)
+#paso 6(para hacer cualquier movimiento tengo que saber con que saldo cuento actualmente)
+entonces elijo 
+opción 1 
+ver saldo actual
+saldo actual = 450
+# paso 7 ( elijo un moviendo o elijo salir)
+#si eliges opción 2
+depositar 
+debes ingresar un monto mayor 0 
+si ingresas un monto menor te sale error y te muestra un mensaje de ingresar un monto mayor a 0
+si ingresas un monto mayor a cero te muestra un mensaje deposito exitoso ( tu saldo actual es mayor a tu saldo inicial)
+si ya no Harás otro movimiento te muestra dos mensajes continuar o salir.
+#paso 8
+#si elijo la opción 3
+retirar
+debo ingresar un monto menor al saldo actual 
+mi saldo actual es 450 entonces mi monto a retirar debe ser un monto no menor 0 pero tampoco mayor a mi saldo actual 450
+si coloco un monto mayor a mi saldo actual entonces me saldrá un mensaje de error ( saldo insuficiente)
+si coloco un monto menor a 0 entonces me saldrá un mensaje de error ( monto incorrecto)
+si coloco un monto mayor a 0 pero menor a mi saldo actual entonces me muestra un mensaje de (retiro exitoso)
+luego del retiro exitoso tengo dos opciones continuar o salir
+#paso 9
+#si elijo opción 4
+mis movimientos 
+saldo inicial 
+movimientos
+saldo actual
+#paso 10
+#tengo dos opciones continuar o salir 
+si elijo salir me mostrara un mensaje de  gracias por usar nuestros cajero banco xxx  adiós.
+
