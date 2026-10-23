@@ -11,6 +11,22 @@
    <!-- Conectando el cerebro del cajero -->
     <p><strong>cumpliré mi objetivo sin importar cuánto me cueste</strong></p>
     <p><em>empezaré la semana con fuerza</em></p>
+    <!--... tus textos anteriores...-->
+    <hr> <!--Esto es solo una linea divisoria -->
+    <h2> Cajero Automatico Virtual</h2>
+    <p>Tu saldo actual es de: <strong>s/450.00</strong></p>
+
+    <!--Aqui el usuario escribira el monto-->
+    <label for="monto">Monto a retirar</label>
+    <input type="number" id = "monto" placeholder = "Ejemplo: 100">
+
+    <!--Este es el boton que ejecutara la magia-->
+    <button onclick="realizarRetiro()">Retirar Dinero</button>
+    <!--Aqui aparecera el mensaje de exito o error-->
+    <h3 id="resultado"></h3>
+    <!--...el script se queda igual...-->
+
+
 
     <script src="cajero.js"></script>
 </body>
