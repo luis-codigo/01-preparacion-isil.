@@ -1,0 +1,63 @@
+/* 1. fondo se la pagina completa */
+body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column; /* 🚀 ESTO ES LA MAGIA: Apila los elementos hacia abajo */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Usamos min-height en vez de height por si hay mucho texto */
+    margin: 0;
+    padding: 20px;
+    color: white; /* Ponemos el texto de arriba en blanco para que resalte en el fondo morado */
+    text-align: center; /* Centramos el texto de arriba */
+    gap: 20px; /* Da un espacio de separación entre el texto de arriba y la tarjeta */
+}
+
+/* 2. La tarjeta blanca del cajero */
+.tarjeta-cajero{
+    background-color: white;
+    color: #333; 
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* 3. Estilo para el boton */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+    
+}
+
+/*4. Estilo para la caja de texto */
+input[type="number"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/*5. El mensaje de resultado*/
+#resultado{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
