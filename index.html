@@ -16,7 +16,7 @@
     <hr> <!--Esto es solo una linea divisoria -->
 <div class="tarjeta-cajero">
     <h2> Cajero Automatico Virtual</h2>
-    <p>Tu saldo actual es de: <strong>s/450.00</strong></p>
+    <p>Tu saldo actual es de: <strong id = "saldo-pantalla">s/450.00</strong></p>
 
     <!--Aqui el usuario escribira el monto-->
     <label for="monto">Monto a retirar</label>
@@ -26,6 +26,13 @@
     <button onclick="realizarRetiro()">Retirar Dinero</button>
     <!--Aqui aparecera el mensaje de exito o error-->
     <h3 id="resultado"></h3>
+    <!--Aqui aparecera la lista de movimiento-->
+<div id="historial" style="margin-top: 20px; text-align: left; font-size: 14px; color: #555;">
+    <h4>historial de movimientos:</h4>
+    <ul id="lista-movimientos"></ul>
+</div>
+
+    <button onclick="realizarDeposito()">Depositar Dinero</button>
 </div>
     <!--...el script se queda igual...-->
 
