@@ -26,19 +26,20 @@ function realizarRetiro() {
         //agregamos el movimiento a la lista
         historialMovimientos.push("Retiro de s/" + retiro);
         //nueva linea: Buscamos el ID del HTML Y LE CAMBIAMOS EL TEXTO
-        document.getElementById("saldo-pantalla").textContent = "s/" + saldo;
-        cajaResultado.textContent = "Retiro exitoso. Te queda: s/" + saldo;
+        document.getElementById("saldo-pantalla").textContent = "s/" + saldo.toFixed(2);
+        cajaResultado.textContent = "Retiro exitoso. Te queda: s/" + saldo.toFixed(2);
         cajaResultado.style.color = "green";
-        
-
+        document.getElementById("monto").value =""
+        console.log("¡Llegue al final del retiro! Los movimientos son:", historialMovimientos);
+        actualizarHistorial();
     }
     else {
         cajaResultado.textContent = "Error: Saldo insuficiente. Tu saldo es s/" + saldo;
         cajaResultado.style.color = "red";
         
-
     }
-    actualizarHistorial();
+        
+       
 }
 function realizarDeposito() {
     let inputMonto = document.getElementById("monto").value;
@@ -51,10 +52,13 @@ function realizarDeposito() {
     } else {  
         saldo = saldo + deposito;
         historialMovimientos.push("Deposito de s/" + deposito);
-        document.getElementById("saldo-pantalla").textContent = "s/" + saldo;
-        cajaResultado.textContent = "Deposito exitoso.  nuevo saldo: s/" + saldo;
+        document.getElementById("saldo-pantalla").textContent = "s/" + saldo.toFixed(2);
+        cajaResultado.textContent = "Deposito exitoso.  nuevo saldo: s/" + saldo.toFixed(2);
         cajaResultado.style.color = "green";
         actualizarHistorial();
+        document.getElementById("monto").value ="";
+        }
+
     }
     function actualizarHistorial() {
         let listaHTML = document.getElementById("lista-movimientos");
@@ -65,4 +69,3 @@ function realizarDeposito() {
             
         }
     }
-}
