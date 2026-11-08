@@ -16,9 +16,15 @@ function realizarRetiro() {
         cajaResultado.style.color =  "red";
 
     }
-    else if (retiro <= 0){
+   
+    else if (retiro <= 0) {
         cajaResultado.textContent = "Error: No puedes retirar montos negativos o cero.";
         cajaResultado.style.color = "red";
+    }
+    else if (retiro % 10 !== 0) {
+        cajaResultado.textContent = "Error: Solo se permiten multiplos de 10 (10, 20, 50, 100...).";
+        cajaResultado.style.color = "red";
+    
 
     }
     else if (retiro <= saldo) {
