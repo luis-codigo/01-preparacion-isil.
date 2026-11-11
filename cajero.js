@@ -55,7 +55,14 @@ function realizarDeposito() {
     if (isNaN(deposito) || deposito <= 0){
         cajaResultado.textContent= " Error: Ingresa un monto valido mayor a 0.";
         cajaResultado.style.color = "red";
-    } else {  
+    }
+    else if (deposito %10 !== 0) {
+        cajaResultado.textContent = "Error: solo se aceptan multiplos de 10.";
+        cajaResultado.style.color = "red";
+    }
+    
+    
+    else {  
         saldo = saldo + deposito;
         historialMovimientos.push("Deposito de s/" + deposito);
         document.getElementById("saldo-pantalla").textContent = "s/" + saldo.toFixed(2);
@@ -75,3 +82,27 @@ function realizarDeposito() {
             
         }
     }
+let claveCorrecta = "1234";
+let intentos = 0;
+let tarjetaBloqueada = false;
+
+function pedirClave() {
+    if(tarjetaBloqueada===true) {
+        alert("tarjeta bloqueada. Acuda a asu banco.");
+        return; //Esto detiene la funcion aqui mismo
+
+    }
+    let claveIngresada = prompt("Por favor, ingrese su clave de 4 digitos:");
+    if (claveIngresada === claveCorrecta){
+        alert("Clave correcta. Bienvenido a su cajero.");
+        intentos = 0; // Reiniciamos los intentos si acierta
+
+    } else {
+        intentos =  intentos + 1; // sumamos un intento fallido
+        alert("Clave incorrecta. Intento" + intentos + "de 3.");
+        if (intentos >= 3) {
+            tarjetaBloqueada = true;
+            alert("Tarjeta bloqueada por seguridad!");
+        }
+    }
+}
