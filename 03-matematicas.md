@@ -100,3 +100,12 @@ El número que está afuera del paréntesis multiplica a **TODOS** los elementos
 
 ---
 
+## 2. Matemáticas: Ecuaciones con X en ambos lados
+*   **Regla de Transposición**: Para resolverlas, agrupamos todas las variables (`x`) de un lado del signo `=` y todos los números del otro lado.
+*   **Ley de signos al mover**: Si un término está sumando de un lado, pasa restando al otro (y viceversa).
+*   **Ejemplo paso a paso:**
+    *   `4x - 2 = 2x + 10`
+    *   Agrupamos las X (pasamos el 2x a la izquierda restando): `4x - 2x - 2 = 10`
+    *   Agrupamos los números (pasamos el -2 a la derecha sumando): `2x = 10 + 2`
+    *   Operamos: `2x = 12`
+    *   Despejamos X (el 2 pasa dividiendo): **`x = 6`**

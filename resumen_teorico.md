@@ -51,3 +51,14 @@ Base de la programación. Solo existen dos valores: **Verdadero (True)** o **Fal
     *   *Ejemplo en código:* `if (esAdmin || esModerador)`
 *   **NOT (NO) - `!`**: Invierte el valor. Si es Verdadero, lo vuelve Falso.
     *   *Ejemplo en código:* `if (!estaLogueado)` (Si NO está logueado, haz algo).
+
+    # 📝 Apuntes de la Sesión: Seguridad y Ecuaciones Avanzadas
+
+## 1. Programación: Sistema de Seguridad (Cajero)
+*   **`prompt()`**: Función que abre una ventana en el navegador para pedirle datos al usuario (en este caso, la clave).
+*   **`alert()`**: Función que muestra un mensaje de advertencia en pantalla.
+*   **Contadores (`intentos = intentos + 1`)**: Variables que aumentan su valor cada vez que ocurre un evento (como un error del usuario).
+*   **Variables Booleanas (`tarjetaBloqueada = true`)**: Variables que solo guardan `true` (verdadero) o `false` (falso) para recordar un estado.
+*   **`return;`**: Instrucción que detiene la ejecución de una función inmediatamente, evitando que el código siga avanzando.
+*   **`Math.random()`**: Genera un número decimal al azar entre 0 y 1.
+*   **`Math.floor()`**: Redondea un número decimal hacia abajo para obtener un número entero.

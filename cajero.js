@@ -106,3 +106,21 @@ function pedirClave() {
         }
     }
 }
+function cambiarColorFondo() {
+    //1. Definimos los caracteres validos para un color hexadecimal
+    let caracteres = "0123456789ABCDEF";
+    let colorNuevo = "#";
+
+    //2. hacemos un bucle de 6 vueltas (porque los colores tienen 6 digitos)
+    for (let i = 0; i < 6; i++) {
+        //elegimos un numero al azar del 0 al 15
+        let numeroAlAzar = Math.floor(Math.random() * 16);
+        //agregamos la letra o numero elegido a nuestro color
+        colorNuevo += caracteres[numeroAlAzar];
+    }
+
+    //3. Aplicamos el color al fondo de la pagina
+    document.body.style.background = colorNuevo;
+    //y tambien cambiamos el texto para que veamos el codigo del color
+    console.log("Nuevo color aplicado:" + colorNuevo);
+}
