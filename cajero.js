@@ -119,8 +119,9 @@ function cambiarColorFondo() {
         colorNuevo += caracteres[numeroAlAzar];
     }
 
-    //3. Aplicamos el color al fondo de la pagina
-    document.body.style.background = colorNuevo;
+    //Buscamos la tarjeta por su clase de CSS
+    let tarjeta = document.querySelector(".tarjeta-cajero");
+    tarjeta.style.backgroundColor = colorNuevo;
     //y tambien cambiamos el texto para que veamos el codigo del color
     console.log("Nuevo color aplicado:" + colorNuevo);
 }

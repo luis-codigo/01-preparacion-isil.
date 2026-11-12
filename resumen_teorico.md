@@ -62,3 +62,11 @@ Base de la programación. Solo existen dos valores: **Verdadero (True)** o **Fal
 *   **`return;`**: Instrucción que detiene la ejecución de una función inmediatamente, evitando que el código siga avanzando.
 *   **`Math.random()`**: Genera un número decimal al azar entre 0 y 1.
 *   **`Math.floor()`**: Redondea un número decimal hacia abajo para obtener un número entero.
+
+# 📝 Apuntes - Sesión de Programación y Matemáticas Avanzadas
+
+## 1. Programación: Manipulación del DOM y Colores
+*   **`document.querySelector(".clase")`**: Busca un elemento específico en el HTML usando su clase de CSS (con el punto incluido). Es ideal para modificar solo una parte de la página (como la tarjeta del cajero) y no todo el fondo.
+*   **`Math.random()`**: Genera un número decimal al azar entre 0 y 1.
+*   **`Math.floor()`**: Redondea un número decimal hacia abajo para obtener un número entero (ej. 3.9 -> 3).
+*   **Colores Hexadecimales**: Se forman con un `#` y 6 caracteres (números del 0-9 y letras de la A-F). Ejemplo: `#4CAF50` (verde).

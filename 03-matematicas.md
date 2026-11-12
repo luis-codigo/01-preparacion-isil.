@@ -109,3 +109,29 @@ El número que está afuera del paréntesis multiplica a **TODOS** los elementos
     *   Agrupamos los números (pasamos el -2 a la derecha sumando): `2x = 10 + 2`
     *   Operamos: `2x = 12`
     *   Despejamos X (el 2 pasa dividiendo): **`x = 6`**
+
+    ## 2. Matemáticas: Regla de Tres Compuesta
+Se usa cuando intervienen **3 o más magnitudes** en un problema. 
+
+### Fórmula General:
+> **`X = (Dato base) × (Fracción Magnitud 1) × (Fracción Magnitud 2)`**
+
+### 🧠 TIPS DEFINITIVOS (Para no fallar con las fracciones):
+Para armar cada fracción, hazte siempre esta pregunta: **"¿El número nuevo es mayor o menor que el inicial?"**
+
+1.  **Si la relación es INVERSA** (A más, menos. A menos, más):
+    *   Si el número nuevo es MAYOR: Usa la fracción **`(Menor / Mayor)`** (para que el resultado disminuya).
+    *   Si el número nuevo es MENOR: Usa la fracción **`(Mayor / Menor)`**.
+2.  **Si la relación es DIRECTA** (A más, más. A menos, menos):
+    *   Si el número nuevo es MAYOR: Usa la fracción **`(Mayor / Menor)`** (para que el resultado aumente).
+    *   Si el número nuevo es MENOR: Usa la fracción **`(Menor / Mayor)`**.
+
+### Ejemplo de aplicación correcto:
+*Problema:* Si 2 obreros (inicial) tardan 5 días en hacer 10 metros (inicial). 
+¿Cuánto tardarán 4 obreros en hacer 20 metros?
+*   Dato base: `5`
+*   Obreros (de 2 a 4): Es INVERSO (más obreros = menos días). Como 4 es mayor, usamos `(2/4)`.
+*   Metros (de 10 a 20): Es DIRECTO (más metros = más días). Como 20 es mayor, usamos `(20/10)`.
+*   Ecuación: `X = 5 × (2/4) × (20/10)`
+*   Cálculo: `X = 5 × 0.5 × 2`
+*   **Resultado: `X = 5 días`**
