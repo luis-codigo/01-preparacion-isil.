@@ -135,3 +135,31 @@ Para armar cada fracción, hazte siempre esta pregunta: **"¿El número nuevo es
 *   Ecuación: `X = 5 × (2/4) × (20/10)`
 *   Cálculo: `X = 5 × 0.5 × 2`
 *   **Resultado: `X = 5 días`**
+
+========================================================
+# 📝 Apuntes: Sistemas Numéricos (Binario)
+
+## 1. ¿Qué es el Sistema Binario?
+*   Es un sistema numérico de **Base 2**.
+*   Las computadoras solo lo entienden porque sus circuitos solo tienen dos estados: apagado (0) y encendido (1).
+*   Nosotros usamos el sistema **Decimal (Base 10)** (del 0 al 9).
+
+## 2. Método de Conversión (Decimal a Binario)
+Para convertir un número decimal a binario, se divide el número entre 2 sucesivamente y se anotan los residuos (el sobrante de la división).
+
+### 🧠 El Súper Truco Mental (Potencias de 2)
+En lugar de dividir, piensa en el "cambio de monedas". Las posiciones en binario valen (de derecha a izquierda): **`1, 2, 4, 8, 16, 32...`** (el doble de la anterior).
+Solo pregúntate: **"¿De qué potencias de 2 está hecho mi número?"**
+
+*   **Ejemplo 1 (El 13):** ¿Tiene 8? Sí (1). Quedan 5. ¿Tiene 4? Sí (1). Queda 1. ¿Tiene 2? No (0). ¿Tiene 1? Sí (1). -> **`1101`**
+*   **Ejemplo 2 (El 7):** ¿Tiene 8? No (0). ¿Tiene 4? Sí (1). ¿Tiene 2? Sí (1). ¿Tiene 1? Sí (1). -> **`0111`** (o simplemente `111`).
+*   **Ejemplo 3 (El 10):** 8 + 2. Entonces es `1` (de 8), `0` (de 4), `1` (de 2), `0` (de 1). -> **`1010`**
+
+## 3. Código en JavaScript
+En JavaScript, convertir un número decimal a binario es muy fácil con la función `.toString(2)`.
+*   **Sintaxis:** `let binario = parseInt(numero).toString(2);`
+*   *Nota: El `2` dentro del paréntesis le dice a JS que queremos la conversión en base 2.*
+
+## 💡 Tips para el Examen (ISIL)
+1.  **Revisa el tamaño:** Si el número es mayor a 8, tu binario debe tener al menos 4 dígitos. Si empieza con `0`, probablemente sea un número menor a 8.
+2.  **Lee de abajo hacia arriba:** Si usas el método de división, el primer residuo (el de arriba) es el bit menos significativo (el de la derecha).
