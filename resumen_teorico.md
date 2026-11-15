@@ -70,3 +70,28 @@ Base de la programación. Solo existen dos valores: **Verdadero (True)** o **Fal
 *   **`Math.random()`**: Genera un número decimal al azar entre 0 y 1.
 *   **`Math.floor()`**: Redondea un número decimal hacia abajo para obtener un número entero (ej. 3.9 -> 3).
 *   **Colores Hexadecimales**: Se forman con un `#` y 6 caracteres (números del 0-9 y letras de la A-F). Ejemplo: `#4CAF50` (verde).
+
+============================================================================
+
+# 📝 Apuntes: Creación de Elementos en el DOM (Lista de Tareas)
+
+## Conceptos Clave de JavaScript
+
+*   **DOM (Document Object Model):** Es la estructura de tu página HTML vista como un árbol. JavaScript puede leerlo y modificarlo.
+*   **`document.getElementById("id")`**: Busca un elemento HTML por su ID.
+*   **`.value`**: Obtiene el texto que el usuario escribió en una caja de texto (`<input>`).
+*   **`document.createElement("etiqueta")`**: Crea un nuevo elemento HTML en la memoria (ej. un `<li>`, un `<button>`, un `<div>`). Aún no se ve en pantalla.
+*   **`.textContent`**: Asigna o lee el texto plano dentro de un elemento HTML.
+*   **`.style.propiedad`**: Modifica el CSS de un elemento directamente desde JavaScript (ej. `.style.backgroundColor = "red"`).
+*   **`appendChild(elemento)`**: Agrega un elemento hijo al final de un elemento padre. (Ej: Meter un `<li>` dentro de un `<ul>`).
+*   **`elemento.remove()`**: Elimina un elemento del HTML y de la pantalla.
+*   **Evento `onclick`**: Es una acción que espera a que el usuario haga clic en un botón o elemento para ejecutar una función.
+
+## Flujo de la función `agregarTarea()`
+1. Capturar texto de la caja (`input.value`).
+2. Validar que no esté vacío (`if`).
+3. Crear el elemento visual en memoria (`createElement`).
+4. Darle contenido al elemento (`textContent`).
+5. (Opcional) Crear un botón de eliminar y asignarle un evento `onclick` con `remove()`.
+6. Insertar el elemento en la pantalla (`appendChild`).
+7. Limpiar la caja de texto para el siguiente uso.

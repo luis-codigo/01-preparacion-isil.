@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Lista de Tareas</title>
+    <style>
+        /* Un poquito de CSS básico para que no se vea feo */
+        body { font-family: Arial; background: #f4f4f9; display: flex; justify-content: center; padding-top: 50px; }
+        .contenedor { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 350px; }
+        input { width: 70%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        button { padding: 10px 15px; background: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #2980b9; }
+        ul { list-style-type: none; padding: 0; }
+        li { background: #ecf0f1; padding: 10px; margin-top: 10px; border-radius: 5px; display: flex; justify-content: space-between; }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <h2>Mis Tareas 📝</h2>
+        
+        <!-- La caja para escribir la tarea -->
+        <input type="text" id="input-tarea" placeholder="Escribe una tarea...">
+        
+        <!-- El botón para agregar -->
+        <button onclick="agregarTarea()">Agregar</button>
+        
+        <!-- Aquí aparecerán las tareas mágicamente -->
+        <ul id="lista-tareas"></ul>
+    </div>
+
+    <!-- Conectamos el JavaScript -->
+    <script src="tareas.js"></script>
+</body>
+</html>
