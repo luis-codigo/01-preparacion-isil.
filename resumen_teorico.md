@@ -95,3 +95,35 @@ Base de la programación. Solo existen dos valores: **Verdadero (True)** o **Fal
 5. (Opcional) Crear un botón de eliminar y asignarle un evento `onclick` con `remove()`.
 6. Insertar el elemento en la pantalla (`appendChild`).
 7. Limpiar la caja de texto para el siguiente uso.
+
+=========================================
+
+# 🚀 Resumen del Bootcamp: Persistencia, Matemáticas y UI
+
+## 1. Programación: Persistencia de Datos (`localStorage`)
+Hasta ahora, al recargar la página (F5), las tareas desaparecían porque estaban solo en la memoria RAM. Para guardarlas para siempre, usamos el `localStorage` (la memoria interna del navegador).
+
+*   **El problema:** `localStorage` solo guarda texto. No entiende Arrays (`[]`).
+*   **La solución (JSON):**
+    *   `JSON.stringify(misTareas)`: Convierte tu Array en un texto plano para poder guardarlo.
+    *   `JSON.parse(localStorage.getItem("clave"))`: Lee el texto guardado y lo convierte de vuelta a un Array real.
+*   **Tip de Pro (El operador OR `||`):** 
+    `JSON.parse(localStorage.getItem("clave")) || []`
+    Esto significa: *"Intenta cargar los datos guardados. Si no hay nada (es null), entonces crea un Array vacío `[]` para que el código no explote"*.
+=========================================
+
+## 2. Programación: Manipulación de Arrays (`.splice`)
+Para eliminar una tarea de la pantalla, no basta con borrarla del HTML. Primero hay que borrarla del Array (los datos reales) y luego volver a dibujar la pantalla.
+*   **`array.splice(indice, cantidad)`**: Corta y elimina elementos. 
+*   **Ejemplo:** `misTareas.splice(i, 1)` -> *"Ve a la posición `i` y elimina 1 elemento"*.
+
+## 3. Programación: Limpiar y Redibujar el DOM
+*   **`lista.innerHTML = ""`**: Vacía todo el contenido HTML de la lista. Es crucial usarlo **antes** de recorrer el Array para dibujar, de lo contrario, las tareas se duplicarían en la pantalla cada vez que agregas una nueva.
+
+=========================================
+
+## 5. CSS: Mejorando la Interfaz de Usuario (UI)
+Le dimos un toque profesional a la Lista de Tareas:
+*   **`border-left: 4px solid #3498db;`**: Pone una línea azul a la izquierda de cada tarea (estilo moderno).
+*   **`align-items: center;`**: (Dentro de un flexbox). Alinea el texto y el botón de la "X" perfectamente en el centro vertical.
+*   **`transition: background 0.3s;`**: Hace que el cambio de color del botón al pasar el mouse sea suave y no un cambio brusco

@@ -163,3 +163,19 @@ En JavaScript, convertir un número decimal a binario es muy fácil con la funci
 ## 💡 Tips para el Examen (ISIL)
 1.  **Revisa el tamaño:** Si el número es mayor a 8, tu binario debe tener al menos 4 dígitos. Si empieza con `0`, probablemente sea un número menor a 8.
 2.  **Lee de abajo hacia arriba:** Si usas el método de división, el primer residuo (el de arriba) es el bit menos significativo (el de la derecha).
+
+=========================================
+
+ 4. Matemáticas Aplicadas a la Programación
+Hoy resolvimos problemas reales usando la lógica que usamos en el código.
+
+*   **Porcentajes y Descuentos:**
+    *   *Problema:* Total de 40 soles, con 20% de descuento.
+    *   *Cálculo:* `40 * 0.20 = 8` (descuento). `40 - 8 = 32` (precio final).
+    *   *Tip de Pro:* Para calcular el precio final directo, multiplica por `(1 - 0.20)`, es decir, `40 * 0.80 = 32`.
+*   **Regla de Tres Simple Directa:**
+    *   *Problema:* Si en 10 min se procesan 500 peticiones, ¿cuántas en 60 min?
+    *   *Cálculo:* `(60 * 500) / 10 = 3000`.
+*   **Cálculo de Impuestos (Freelancer):**
+    *   *Problema:* 8 horas/día x 5 días = 40 horas. 40h x S/ 50 = S/ 2000. Impuesto 15%.
+    *   *Cálculo:* `2000 * 0.15 = 300` (impuesto). `2000 - 300 = 1700` (ganancia neta).
