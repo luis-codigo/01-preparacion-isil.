@@ -127,3 +127,20 @@ Le dimos un toque profesional a la Lista de Tareas:
 *   **`border-left: 4px solid #3498db;`**: Pone una línea azul a la izquierda de cada tarea (estilo moderno).
 *   **`align-items: center;`**: (Dentro de un flexbox). Alinea el texto y el botón de la "X" perfectamente en el centro vertical.
 *   **`transition: background 0.3s;`**: Hace que el cambio de color del botón al pasar el mouse sea suave y no un cambio brusco
+
+=====================================
+
+# 📝 Apuntes: Objetos en JavaScript y Lista de Tareas v2.0
+
+## 1. ¿Qué es un Objeto en JavaScript?
+Hasta ahora usábamos variables simples (una caja) o Arrays (una fila de cajas). Un **Objeto** es una caja mucho más grande que guarda información en formato de **"propiedad: valor"**. 
+*   Se escribe con llaves `{}`.
+*   Sirve para agrupar datos que pertenecen a una misma cosa (como el perfil de un usuario o una tarea).
+
+**Ejemplo:**
+```javascript
+let miTarea = {
+    texto: "Estudiar para ISIL",
+    completada: false,
+    prioridad: "Alta"
+};
