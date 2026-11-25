@@ -66,5 +66,11 @@ function mostrarTareas() {
         nuevaTarea.appendChild(botonEliminar);
         lista.appendChild(nuevaTarea);
     }
-} // 🚨 Esta llave cierra el for, la de abajo cierra la función.
+} 
+
+// 🚨 Esta llave cierra el for, la de abajo cierra la función.
+
+//conectando el boton con la funcion usando el estandar profecional
+let botonAgregar = document.getElementById("btn-agregar");
+botonAgregar.addEventListener("click", agregarTarea);
 

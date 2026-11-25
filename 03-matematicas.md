@@ -179,3 +179,37 @@ Hoy resolvimos problemas reales usando la lógica que usamos en el código.
 *   **Cálculo de Impuestos (Freelancer):**
     *   *Problema:* 8 horas/día x 5 días = 40 horas. 40h x S/ 50 = S/ 2000. Impuesto 15%.
     *   *Cálculo:* `2000 * 0.15 = 300` (impuesto). `2000 - 300 = 1700` (ganancia neta).
+
+    ===========================================
+
+    
+## PARTE 2: Matemáticas - Funciones (Hoy)
+
+*   **¿Qué es una función?** Es una regla que toma una entrada (x) y le asigna exactamente una salida (y).
+*   **Dominio:** Todos los valores posibles que puede tomar la X (eje horizontal).
+*   **Rango:** Todos los valores posibles que puede tomar la Y (eje vertical).
+*   **Notación de Intervalos:**
+    *   **Corchetes `[ ]`:** Incluye el número (Intervalo cerrado). *Ej: [-6, 9].*
+    *   **Paréntesis `( )`:** No incluye el número (Intervalo abierto). *Ej: (-5, 5).*
+    *   **Infinito:** Siempre lleva paréntesis. *Ej: (-∞, 5].*
+*   **Clasificación de Números (Corrección clave):**
+    *   **Reales (R):** ¡Son TODOS los números de la recta numérica! Incluyen negativos, cero, positivos, fracciones, decimales e irracionales (como Pi).
+
+---
+
+## PARTE 3: Programación - Funciones (Hoy)
+
+### 1. Parámetros vs. Argumentos
+*   **Parámetros:** Son las **variables** vacías que declaras al *definir* la función. (Ej: `function saludar(nombre) { ... }`).
+*   **Argumentos:** Son los **valores reales** que envías al *ejecutar* la función. (Ej: `saludar("Carlos")`).
+
+### 2. Ejecutar vs. console.log vs. return
+*   **Ejecutar (Invocar):** Es el acto de llamar a la función para que haga su trabajo. (Ej: `miFuncion()`).
+*   **`console.log()`:** Es una herramienta de diagnóstico. Solo muestra el valor en la consola para que el programador lo vea, pero **no devuelve** nada al código. El valor se pierde.
+*   **`return`:** Es el **resultado real** que la función "escupe" hacia afuera. Permite guardar ese valor en una variable y reutilizarlo en otras operaciones.
+    *   *Si una función no tiene `return`, devuelve `undefined`.*
+
+## 🧠 Analogía del Chef:
+*   **Ejecutar:** Pedir la hamburguesa.
+*   **console.log:** El chef probando la salsa y diciendo "falta sal" (solo para él).
+*   **return:** El chef entregándote la hamburguesa empacada para llevar (el producto final).
