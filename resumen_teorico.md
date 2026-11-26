@@ -144,3 +144,29 @@ let miTarea = {
     completada: false,
     prioridad: "Alta"
 };
+
+===================================================================================
+
+# 📝 Apuntes: Funciones Puras, return y Node.js
+
+## 1. Diferencia entre console.log y return (CRUCIAL)
+*   **`console.log()`**: Es solo una herramienta de diagnóstico para el programador. Muestra el valor en la consola, pero **no lo devuelve**. Si intentas guardar el resultado de una función que solo tiene `console.log`, la variable quedará como `undefined`.
+*   **`return`**: Es el resultado real que la función "escupe" hacia afuera. Permite guardar el valor en una variable y reutilizarlo en otras operaciones o funciones.
+*   **Prueba de laboratorio:** Si a una función le quitas el `return`, el cálculo se hace internamente pero la variable que recibe el resultado se queda con el valor `undefined`.
+
+## 2. Funciones Puras
+*   **¿Qué son?** Funciones que reciben parámetros, hacen un cálculo y devuelven un resultado usando `return`. No modifican variables externas ni dependen de ellas.
+*   **Ejemplo:**
+    ```javascript
+    function calcularPrecioFinal(precio, porcentajeDescuento) {
+        let descuento = precio * (porcentajeDescuento / 100);
+        let total = precio - descuento;
+        return total;
+    }
+    # 📝 Apuntes: Entornos de Ejecución
+
+*   **Python:** Tiene un intérprete nativo. El editor (VS Code) lo ejecuta automáticamente con F5.
+*   **JavaScript (Node.js):** Es un motor que sacó JS del navegador. Para ejecutarlo en la computadora, debemos llamarlo manualmente desde la terminal con el comando:
+    ```bash
+    node nombre_del_archivo.js
+
