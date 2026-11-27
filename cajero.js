@@ -1,6 +1,10 @@
 // 1. Declaramos el saldo inicial (recuerda  que 'Let' permite modificarlo)
 let saldo=450;
 let historialMovimientos = []; // aqui creamos nuestro array vacia
+//Funcion pura: Calcula el nuevo saldo y lo devuelve
+function calcularNuevoSaldo(saldoActual, montoARetirar) {
+ return saldoActual - montoARetirar;   
+}
 // 2. Creamos la funcion que se activara cuando presiones el boton
 function realizarRetiro() {
     // Buscamos en el HTML la caja de texto y obtenemos el numero que escribio el usuario
@@ -28,7 +32,8 @@ function realizarRetiro() {
 
     }
     else if (retiro <= saldo) {
-        saldo = saldo - retiro; // Actualizamos el saldo
+        //Usamos la funcion pura para obtener el nuevo saldo
+        saldo = calcularNuevoSaldo(saldo, retiro); 
         //agregamos el movimiento a la lista
         historialMovimientos.push("Retiro de s/" + retiro);
         //nueva linea: Buscamos el ID del HTML Y LE CAMBIAMOS EL TEXTO
@@ -124,4 +129,12 @@ function cambiarColorFondo() {
     tarjeta.style.backgroundColor = colorNuevo;
     //y tambien cambiamos el texto para que veamos el codigo del color
     console.log("Nuevo color aplicado:" + colorNuevo);
+}
+
+function convertirBinario() {
+    let numero = prompt("Ingresa un numero decimal para convertirlo a binario:");
+    if(numero === null || numero ==="") return;
+
+    let numeroBinario = parseInt(numero).toString(2);
+    alert("El numero" + numero + "en binario es:" + numeroBinario);
 }
