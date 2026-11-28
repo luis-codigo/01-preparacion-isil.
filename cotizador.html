@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cotizador de eventos</title>
+    <style>
+        body {font-family: 'Segoe UI', sans-serif; background: #f4f4f9; display:
+        flex; justify-content: center; padding-top: 50px;}
+        .contenedor { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 350px; text-align: center; }
+        input { width: 80%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        button { padding: 10px 15px; background: #e67e22; color: white; border: none; border-radius: 5px; cursor: pointer; width: 85%; }
+        button:hover { background: #d35400; }
+        #resultado { margin-top: 20px; font-weight: bold; font-size: 18px; }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <h2>Cotizador de Eventos 🎉</h2>
+        <p>Local: S/ 300 (Fijo)<br>Por invitado: S/ 15</p>
+        
+        <input type="number" id="input-invitados" placeholder="Número de invitados">
+        <button id="btn-calcular">Calcular Costo</button>
+        
+        <h3 id="resultado"></h3>
+    </div>
+
+    <script src="cotizador.js"></script>
+</body>
+</html>
